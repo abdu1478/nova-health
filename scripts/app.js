@@ -28,7 +28,7 @@ class App {
     this.#workouts = Storage.getWorkouts();
     this.#workouts.forEach(workout => {
       this._renderWorkout(workout);
-      if (this.#workouts.length) this.#map.renderWorkoutMarker(workout);
+      this.#map.renderWorkoutMarker(workout);
     });
 
     // Attach event listeners
